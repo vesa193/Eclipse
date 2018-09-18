@@ -1,0 +1,118 @@
+.Features
+    background: #f6f9fa
+    display: flex
+    justify-content: center
+    align-items: center
+    //padding: 100px 0 80px 0
+
+    &__wrap
+        //width: 80%
+
+        h3, p
+            text-align: center
+
+        p
+            margin-top: 20px
+
+    &__cards
+        display: grid
+        //grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px
+
+    &__card
+        position: relative
+        background: #fff
+        position: relative
+        top: 0
+        display: flex
+        justify-content: space-around
+        flex-direction: column
+        border-radius: 5px
+        overflow: hidden
+        transition: all .3s ease-in-out
+
+        &:hover, &:focus
+
+            .Features__card
+                
+                &__overlay
+                    opacity: 1
+
+                &__desc
+
+                    img
+                        transform: translateX(30px)
+                        opacity: 0
+
+                &__img
+                    transform: scale(1.1)
+
+            
+            
+
+
+
+        &__img
+            position: relative
+            width: 100%
+            top: 0
+            transition: transform 1.5s linear
+
+        &__overlay
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            background: rgba(255, 255, 255, .7)
+            opacity: 0
+            z-index: 999
+            transition: opacity .3s ease-in-out
+
+        &__desc
+            position: relative
+            display: flex
+            justify-content: space-around
+            padding: 20px 10px
+            border-radius: 5px
+            border-top-left-radius: 0 
+            border-top-right-radius: 0
+            background: #fff
+            z-index: 9999
+
+            img
+                transition: all .3s ease-in-out
+
+    &__links
+        display: flex
+        justify-content: space-around
+        //padding: 0 40px
+        border: 2px solid #28c8c6
+        border-radius: 5px
+        margin: 40px auto
+        //width: 45%
+
+
+        li
+            flex: 1
+
+            a
+                display: block
+                padding: 20px 10px
+                text-align: center
+                color: #28c8c6
+                font-size: .9em
+                font-weight: bold
+
+
+                &:hover, &:focus
+                    background: #28c8c6
+                    color: #fff
+
+    &__link
+
+        &--active
+            background: #28c8c6
+            color: white !important
+
+
+
